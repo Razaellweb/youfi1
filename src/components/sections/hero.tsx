@@ -341,10 +341,10 @@ export default function HeroSection() {
           <div className="inline-flex items-center gap-2 rounded-full border-2 border-purple-300 bg-gradient-to-r from-purple-100 to-pink-100 px-4 py-2 shadow-lg">
             <span className="flex items-center gap-1 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 px-3 py-1 text-xs font-bold text-white shadow-md">
               <Sparkles className="size-3" />
-              V1 Beta
+              New!
             </span>
             <span className="text-sm font-semibold text-purple-900">
-              Closed Beta Now Open for 200 Selected Users
+              Get approved in minutes, funded in hours! 🚀
             </span>
             <ArrowRight className="size-4 text-purple-600" />
           </div>
@@ -352,23 +352,22 @@ export default function HeroSection() {
 
         {/* Main Headline */}
         <h1 className="mx-auto max-w-4xl text-center" style={{ fontFamily: "var(--font-heading)" }}>
-          Your Gateway to{" "}
-          <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">Crypto-Backed</span>{" "}
-          Lending
+          Get Cash Fast with{" "}
+          <span className="bg-gradient-to-r from-purple-600 via-pink-600 to-orange-500 bg-clip-text text-transparent">Your Crypto</span>
         </h1>
 
         {/* Subtitle */}
         <p className="mx-auto mt-6 max-w-2xl text-center text-body-lg text-muted-foreground">
-          Connect with lenders and borrowers in emerging markets. Secure loans with crypto collateral, instant disbursement in USDC or Naira. 💎
+          Need Naira now? Use your crypto as collateral and get instant loans at competitive rates. No credit checks, no paperwork, no waiting. 💰✨
         </p>
 
         {/* CTA Buttons */}
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <Button className="h-12 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 px-8 text-button font-bold shadow-lg hover:shadow-xl transition-all hover:scale-105">
-            🚀 Apply to Borrow
+            🚀 Get Your Loan Now
           </Button>
-          <Button variant="outline" className="h-12 rounded-2xl border-2 border-purple-300 px-8 text-button font-bold hover:bg-purple-50 transition-all">
-            💰 Become a Lender
+          <Button variant="ghost" className="h-12 rounded-2xl px-8 text-button font-semibold text-purple-700 hover:bg-purple-50 transition-all">
+            Learn How It Works
           </Button>
         </div>
 
