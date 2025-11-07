@@ -1,3 +1,6 @@
+/* Updated: 2025-11-07T08:33:44.966Z */
+/* Updated: 2025-11-03T12:02:16.786Z */
+/* Updated: 2025-10-30T16:34:37.730Z */
 /* Updated: 2025-10-30T16:04:16.813Z */
 /* Updated: 2025-10-30T09:31:01.040Z */
 /* Updated: 2025-10-30T09:29:30.474Z */
@@ -10,8 +13,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  /* Shadcn/UI colors - Vibrant & Playful */
-  --color-background: #ffffff;
+  /* Shadcn/UI colors - Clean & Professional */
+  --color-background: #FFF9F0;
   --color-foreground: #1a1a2e;
 
   --color-card: #ffffff;
@@ -20,26 +23,26 @@
   --color-popover: #ffffff;
   --color-popover-foreground: #1a1a2e;
 
-  --color-primary: #8b5cf6;
+  --color-primary: #2563eb;
   --color-primary-foreground: #ffffff;
 
-  --color-secondary: #fef3c7;
-  --color-secondary-foreground: #92400e;
+  --color-secondary: #f3f4f6;
+  --color-secondary-foreground: #1f2937;
 
   --color-muted: #f3f4f6;
   --color-muted-foreground: #6b7280;
 
-  --color-accent: #ddd6fe;
-  --color-accent-foreground: #5b21b6;
+  --color-accent: #dbeafe;
+  --color-accent-foreground: #1e40af;
 
   --color-destructive: #f43f5e;
   --color-destructive-foreground: #fafafa;
 
   --color-border: #e5e7eb;
   --color-input: #e5e7eb;
-  --color-ring: #8b5cf6;
+  --color-ring: #2563eb;
 
-  --color-chart-1: #8b5cf6;
+  --color-chart-1: #2563eb;
   --color-chart-2: #06b6d4;
   --color-chart-3: #f59e0b;
   --color-chart-4: #ec4899;
@@ -47,12 +50,12 @@
 
   --color-sidebar: #f9fafb;
   --color-sidebar-foreground: #374151;
-  --color-sidebar-primary: #8b5cf6;
+  --color-sidebar-primary: #2563eb;
   --color-sidebar-primary-foreground: #ffffff;
-  --color-sidebar-accent: #ddd6fe;
-  --color-sidebar-accent-foreground: #5b21b6;
+  --color-sidebar-accent: #dbeafe;
+  --color-sidebar-accent-foreground: #1e40af;
   --color-sidebar-border: #e5e7eb;
-  --color-sidebar-ring: #8b5cf6;
+  --color-sidebar-ring: #2563eb;
 
   --radius-lg: 1.25rem; /* 20px - More rounded */
   --radius-md: 1rem; /* 16px */
@@ -79,9 +82,12 @@
     }
   }
 
-  /* Custom Design Tokens - Vibrant Palette */
-  --color-primary-purple: #8b5cf6;
-  --color-primary-purple-hover: #7c3aed;
+  /* Custom Design Tokens - Clean Palette */
+  --color-primary-blue: #2563eb;
+  --color-primary-blue-hover: #1d4ed8;
+  --color-blue-light: #dbeafe;
+  --color-warm-bg: #FFF9F0;
+  --color-warm-accent: #FEF3C7;
   --color-cyan: #06b6d4;
   --color-cyan-light: #67e8f9;
   --color-pink: #ec4899;
@@ -93,8 +99,8 @@
   --color-success-green: #10b981;
   --color-teal: #14b8a6;
   --color-star-rating: #fbbf24;
-  --color-shadow-card: rgba(139, 92, 246, 0.08);
-  --color-shadow-button: rgba(139, 92, 246, 0.2);
+  --color-shadow-card: rgba(37, 99, 235, 0.08);
+  --color-shadow-button: rgba(37, 99, 235, 0.2);
 
   --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-heading: "Space Grotesk", "DM Sans", sans-serif;
@@ -126,26 +132,26 @@
 
 @layer base {
   :root {
-    --background: #ffffff;
+    --background: #FFF9F0;
     --foreground: #1a1a2e;
     --card: #ffffff;
     --card-foreground: #1a1a2e;
     --popover: #ffffff;
     --popover-foreground: #1a1a2e;
-    --primary: #8b5cf6;
+    --primary: #2563eb;
     --primary-foreground: #ffffff;
-    --secondary: #fef3c7;
-    --secondary-foreground: #92400e;
+    --secondary: #f3f4f6;
+    --secondary-foreground: #1f2937;
     --muted: #f3f4f6;
     --muted-foreground: #6b7280;
-    --accent: #ddd6fe;
-    --accent-foreground: #5b21b6;
+    --accent: #dbeafe;
+    --accent-foreground: #1e40af;
     --destructive: #f43f5e;
     --destructive-foreground: #fafafa;
     --border: #e5e5e5;
     --input: #e5e5e5;
-    --ring: #8b5cf6;
-    --chart-1: #8b5cf6;
+    --ring: #2563eb;
+    --chart-1: #2563eb;
     --chart-2: #06b6d4;
     --chart-3: #f59e0b;
     --chart-4: #ec4899;
@@ -158,7 +164,7 @@
     --sidebar-accent: #f0f0f0;
     --sidebar-accent-foreground: #1a1a1a;
     --sidebar-border: #d4d4d8;
-    --sidebar-ring: #3b82f6;
+    --sidebar-ring: #2563eb;
   }
 
   html {
