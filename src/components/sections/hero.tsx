@@ -92,7 +92,7 @@ export default function HeroSection() {
               { amount: '₦500,000', rate: '10.2%', tenor: '20d', collateral: '$900 USDT' },
               { amount: '₦150,000', rate: '7.8%', tenor: '10d', collateral: '$270 USDC' },
             ].map((req, i) => (
-              <div key={i} className="flex items-center justify-between rounded-lg border bg-gray-50 p-3 text-sm shadow-sm">
+              <div key={`req-${i}`} className="flex items-center justify-between rounded-lg border bg-gray-50 p-3 text-sm shadow-sm">
                 <div>
                   <p className="font-bold text-foreground">{req.amount}</p>
                   <p className="text-xs text-muted-foreground">{req.collateral}</p>
@@ -116,7 +116,7 @@ export default function HeroSection() {
               { amount: '₦750,000', rate: '8.2%', tenor: '≤25d', available: '₦750k' },
               { amount: '₦500,000', rate: '10.5%', tenor: '≤20d', available: '₦500k' },
             ].map((offer, i) => (
-              <div key={i} className="flex items-center justify-between rounded-lg border bg-gray-50 p-3 text-sm shadow-sm">
+              <div key={`offer-${i}`} className="flex items-center justify-between rounded-lg border bg-gray-50 p-3 text-sm shadow-sm">
                 <div>
                   <p className="font-bold text-foreground">{offer.amount}</p>
                   <p className="text-xs text-muted-foreground">Available: {offer.available}</p>
@@ -176,7 +176,7 @@ export default function HeroSection() {
             { range: '₦500k - ₦1M', rate: '7-9%', bar: '55%', color: 'bg-blue-500' },
             { range: '₦1M - ₦5M', rate: '6-8%', bar: '45%', color: 'bg-green-500' },
           ].map((item, i) => (
-            <div key={i}>
+            <div key={`rate-${i}`}>
               <div className="mb-1 flex justify-between text-sm">
                 <span className="font-bold">{item.range}</span>
                 <span className="font-semibold text-blue-600">{item.rate}</span>
@@ -296,7 +296,7 @@ export default function HeroSection() {
             { borrower: 'User #2341', amount: '₦750,000', rate: '7.8%', status: 'Repaid', color: 'text-gray-600', bg: 'bg-gray-50' },
             { borrower: 'User #9123', amount: '₦400,000', rate: '9.5%', status: 'Active', color: 'text-blue-600', bg: 'bg-blue-50' },
           ].map((loan, i) => (
-            <div key={i} className={`flex items-center justify-between rounded-xl border ${loan.bg} p-3 shadow-sm`}>
+            <div key={`loan-${i}`} className={`flex items-center justify-between rounded-xl border ${loan.bg} p-3 shadow-sm`}>
               <div>
                 <p className="text-sm font-bold">{loan.borrower}</p>
                 <p className="text-xs text-muted-foreground">{loan.amount}</p>
@@ -344,7 +344,7 @@ export default function HeroSection() {
               New!
             </span>
             <span className="text-sm font-semibold text-foreground">
-              Get approved in minutes, funded in hours! 🚀
+              Finance powered by you.
             </span>
             <ArrowRight className="size-4 text-blue-600" />
           </div>
@@ -352,20 +352,18 @@ export default function HeroSection() {
 
         {/* Main Headline */}
         <h1 className="mx-auto max-w-4xl text-center" style={{ fontFamily: "var(--font-heading)" }}>
-          Get Cash Fast with{" "}
-          <span className="text-blue-600">Your</span>{" "}
-          <span className="text-orange-500">Crypto</span>
+          Lend. Borrow. Grow.
         </h1>
 
         {/* Subtitle */}
         <p className="mx-auto mt-6 max-w-2xl text-center text-body-lg text-muted-foreground">
-          Need Naira now? Use your crypto as collateral and get instant loans at competitive rates. No credit checks, no paperwork, no waiting. 💰✨
+          Unlock instant loans with your crypto and stablecoins as collateral, or earn solid returns lending your USDC or Naira.
         </p>
 
         {/* CTA Buttons */}
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
           <Button className="h-12 rounded-xl bg-blue-600 px-8 text-button font-bold shadow-md hover:bg-blue-700 transition-all">
-            ⚡ Get Your Loan Now
+            Get Started Now →
           </Button>
           <Button variant="outline" className="h-12 rounded-xl px-8 text-button font-semibold transition-all">
             Learn How It Works
@@ -380,7 +378,7 @@ export default function HeroSection() {
                 const Icon = tab.icon;
                 return (
                   <button
-                    key={tab.id}
+                    key={`tab-${tab.id}`}
                     onClick={() => setActiveTab(tab.id)}
                     className={`flex items-center gap-2 rounded-lg px-5 py-3 text-sm font-semibold transition-all whitespace-nowrap ${
                       activeTab === tab.id

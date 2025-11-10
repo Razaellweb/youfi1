@@ -2,12 +2,12 @@ import { CheckCircle2 } from "lucide-react";
 
 export default function CompanyProfile() {
   const features = [
-    "Tier 1 & Tier 2 KYC verification",
-    "BVN and ID verification",
-    "4-digit transaction PIN security",
-    "Real-time price feed monitoring",
-    "Automated liquidation protection",
-    "Complete transaction logging",
+    "🛡️ Smart-Contract Security — Your funds are secured, and collaterals are held in audited smart contracts for maximum safety.",
+    "⚡ Fast Disbursements — Get funded in minutes not days.",
+    "🌍 Borderless Finance — Borrow, lend, support friends and family or earn globally, all from one app.",
+    "💸 Transparent Yields — No hidden fees. No surprises.",
+    "🤖 Quote AI Agent — Get matched faster with fair rate suggestions.",
+    "💱 FX Market Place — Trade dollars ↔️ naira, peer-to-peer, with zero fees.",
   ];
 
   return (
@@ -25,7 +25,7 @@ export default function CompanyProfile() {
                   Secure & Verified
                 </h3>
                 <p className="mt-2 text-sm text-muted-foreground">
-                  Multi-tier verification system
+                  Built with security at its core
                 </p>
               </div>
             </div>
@@ -34,10 +34,10 @@ export default function CompanyProfile() {
           {/* Right: Content */}
           <div>
             <h2 className="text-3xl lg:text-5xl font-semibold" style={{ fontFamily: "var(--font-heading)" }}>
-              Built for Security and Compliance
+              Why Trust YouFi?
             </h2>
             <p className="mt-4 text-body-lg text-muted-foreground">
-              YouFi implements comprehensive KYC verification, secure collateral management, and regulatory compliance to ensure safe lending and borrowing.
+              Built with security, transparency and user experience at its core
             </p>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">

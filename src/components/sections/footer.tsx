@@ -18,7 +18,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-sm text-muted-foreground max-w-xs">
-              Empowering emerging markets with crypto-backed lending. Connect, borrow, and earn with confidence.
+              Finance Powered by You
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-8 flex flex-col lg:flex-row gap-4 items-center justify-between border-t pt-8">
           <p className="text-sm text-muted-foreground">
-            © 2025 YouFi. All rights reserved.
+            YouFi — Finance Powered by You
           </p>
           <div className="flex gap-4">
             <a href="#" className="text-muted-foreground hover:text-foreground">

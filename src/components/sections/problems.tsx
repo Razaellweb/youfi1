@@ -1,40 +1,48 @@
-import { Ban, Zap, TrendingDown } from "lucide-react";
+import { Wallet, UserPlus, Banknote, Clock } from "lucide-react";
 
 export default function ProblemsSection() {
-  const problems = [
+  const benefits = [
     {
-      icon: Ban,
-      title: "No Credit History? No Problem! 🎉",
-      description: "Traditional banks reject you without credit history. With YouFi, your crypto is your credit score. Get approved instantly based on your collateral, not your past.",
+      icon: Wallet,
+      title: "No need to sell your crypto",
+      description: "Get cash while keeping your assets invested",
     },
     {
-      icon: Zap,
-      title: "Get Money Lightning Fast ⚡",
-      description: "Stop waiting days for loan approvals. With YouFi, you're matched with lenders in under 3 hours and get your Naira within minutes of approval. Emergency cash when you need it most!",
+      icon: UserPlus,
+      title: "Invite friends as guarantors",
+      description: "Don’t have enough collateral? Your trusted network can help.",
     },
     {
-      icon: TrendingDown,
-      title: "Lower Rates, More Savings 💸",
-      description: "Say goodbye to predatory interest rates! Our competitive P2P marketplace keeps rates fair (6.5%-12.5% monthly). Your crypto works for you while you access the cash you need.",
+      icon: Banknote,
+      title: "Quick cashouts in local currency",
+      description: "Convert your USD loan into Naira instantly via our secure P2P marketplace.",
+    },
+    {
+      icon: Clock,
+      title: "Flexible tenors",
+      description: "Borrow from 1 day up to 180 days.",
     },
   ];
 
   return (
     <section className="border-b bg-background py-20 lg:py-32">
       <div className="container">
-        <h2 className="mx-auto max-w-3xl text-center text-3xl lg:text-5xl font-bold" style={{ fontFamily: "var(--font-heading)" }}>
-          Why Borrowers{" "}
-          <span className="relative inline-block">
-            <span className="relative z-10 text-primary">Love YouFi</span>
-          </span>
-        </h2>
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl lg:text-5xl font-bold" style={{ fontFamily: "var(--font-heading)" }}>
+            Why YouFi?
+          </h2>
+          <p className="mt-3 text-body-lg text-muted-foreground">
+            Empowering financial freedom through peer-to-peer lending
+          </p>
+          <p className="mt-6 text-sm uppercase tracking-wide text-muted-foreground">For Borrowers:</p>
+        </div>
 
-        <div className="mt-16 grid gap-0 border-t lg:grid-cols-3">
-          {problems.map((problem, index) => {
-            const Icon = problem.icon;
+        <div className="mt-12 grid gap-0 border-t lg:grid-cols-4">
+          {benefits.map((benefit) => {
+            const Icon = benefit.icon;
             return (
               <div
-                key={index}
+                key={benefit.title}
                 className="border-b bg-card px-8 py-12 lg:border-b-0 lg:border-r last:border-b-0 last:border-r-0 hover:bg-accent transition-colors"
                 style={{ borderStyle: "dashed" }}
               >
@@ -42,10 +50,10 @@ export default function ProblemsSection() {
                   <Icon className="size-6 text-primary" />
                 </div>
                 <h4 className="text-lg font-bold" style={{ fontFamily: "var(--font-heading)" }}>
-                  {problem.title}
+                  {benefit.title}
                 </h4>
                 <p className="mt-3 text-body-md text-muted-foreground">
-                  {problem.description}
+                  {benefit.description}
                 </p>
               </div>
             );
