@@ -61,7 +61,8 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="mt-4 rounded-xl border bg-blue-50 p-4 shadow-sm">
-        <p className="text-sm font-bold text-blue-900">🗓️ Repayment Due: 10 days</p>
+        <p className="text-sm font-bold text-blue-900">
+📓 Repayment Due: 10 days</p>
         <p className="mt-1 text-xs text-blue-700">Total repayment: ₦104,000 (including 0.4% daily interest)</p>
       </div>
     </div>
@@ -83,7 +84,8 @@ export default function HeroSection() {
       <div className="grid gap-4 md:grid-cols-2">
         <div className="rounded-xl border bg-white p-4 shadow-sm">
           <div className="mb-3 flex items-center justify-between">
-            <h4 className="font-bold text-foreground">📉 Borrower Requests</h4>
+            <h4 className="font-bold text-foreground">
+📉 Borrower Requests</h4>
             <span className="rounded-full bg-blue-100 px-2 py-1 text-xs font-bold text-blue-700">Active: 23</span>
           </div>
           <div className="space-y-2">
@@ -107,7 +109,8 @@ export default function HeroSection() {
         </div>
         <div className="rounded-xl border bg-white p-4 shadow-sm">
           <div className="mb-3 flex items-center justify-between">
-            <h4 className="font-bold text-foreground">📈 Lender Offers</h4>
+            <h4 className="font-bold text-foreground">
+📈 Lender Offers</h4>
             <span className="rounded-full bg-green-100 px-2 py-1 text-xs font-bold text-green-700">Available: 8</span>
           </div>
           <div className="space-y-2">
@@ -132,7 +135,8 @@ export default function HeroSection() {
       </div>
       <div className="mt-4 rounded-xl border bg-blue-50 p-4 text-center shadow-sm">
         <Clock className="mx-auto mb-2 size-8 text-blue-600" />
-        <p className="text-sm font-bold text-blue-900">⚡ Average Match Time: 2.5 hours</p>
+        <p className="text-sm font-bold text-blue-900">
+⚡ Average Match Time: 2.5 hours</p>
       </div>
     </div>
   );
@@ -168,7 +172,8 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="rounded-xl border bg-white p-4 shadow-sm">
-        <h4 className="mb-4 font-bold">📊 Rate by Loan Amount</h4>
+        <h4 className="mb-4 font-bold">
+📊 Rate by Loan Amount</h4>
         <div className="space-y-3">
           {[
             { range: '₦10k - ₦100k', rate: '10-12%', bar: '85%', color: 'bg-orange-500' },
@@ -207,7 +212,8 @@ export default function HeroSection() {
       <div className="grid gap-4 md:grid-cols-2">
         <div className="rounded-xl border bg-white p-6 shadow-md">
           <div className="mb-4 flex items-center justify-between">
-            <span className="text-sm font-semibold text-foreground">💰 NGN Wallet</span>
+            <span className="text-sm font-semibold text-foreground">
+💰 NGN Wallet</span>
             <span className="rounded-full bg-blue-100 px-3 py-1 text-xs font-bold text-blue-700">Providus Bank</span>
           </div>
           <p className="text-3xl font-bold text-foreground">₦1,245,000</p>
@@ -223,7 +229,8 @@ export default function HeroSection() {
         </div>
         <div className="rounded-xl border bg-white p-6 shadow-md">
           <div className="mb-4 flex items-center justify-between">
-            <span className="text-sm font-semibold text-foreground">💵 USDC Wallet</span>
+            <span className="text-sm font-semibold text-foreground">
+💵 USDC Wallet</span>
             <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-bold text-green-700">Polygon</span>
           </div>
           <p className="text-3xl font-bold text-foreground">$2,450.00</p>
@@ -240,11 +247,13 @@ export default function HeroSection() {
       </div>
       <div className="mt-4 grid gap-4 md:grid-cols-2">
         <div className="rounded-xl border bg-white p-4 shadow-sm">
-          <p className="text-sm text-muted-foreground">💎 USDT Wallet (Tron)</p>
+          <p className="text-sm text-muted-foreground">
+💎 USDT Wallet (Tron)</p>
           <p className="mt-1 text-xl font-bold text-foreground">$850.00</p>
         </div>
         <div className="rounded-xl border bg-white p-4 shadow-sm">
-          <p className="text-sm text-muted-foreground">✨ Total Portfolio Value</p>
+          <p className="text-sm text-muted-foreground">
+✨ Total Portfolio Value</p>
           <p className="mt-1 text-xl font-bold text-blue-600">₦6,195,000</p>
         </div>
       </div>
@@ -288,7 +297,8 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="mt-4 rounded-xl border bg-white p-4 shadow-sm">
-        <h4 className="mb-4 font-bold">💸 Recent Funded Loans</h4>
+        <h4 className="mb-4 font-bold">
+💸 Recent Funded Loans</h4>
         <div className="space-y-3">
           {[
             { borrower: 'User #5432', amount: '₦500,000', rate: '8.5%', status: 'Active', color: 'text-green-600', bg: 'bg-green-50' },
@@ -310,7 +320,8 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="mt-4 rounded-xl border bg-blue-50 p-4 shadow-sm">
-        <p className="text-sm font-bold text-blue-900">💰 Platform Performance Fee: 27.5%</p>
+        <p className="text-sm font-bold text-blue-900">
+💰 Platform Performance Fee: 27.5%</p>
         <p className="mt-1 text-xs text-blue-700">You keep 72.5% of all interest earned</p>
       </div>
     </div>
@@ -352,7 +363,7 @@ export default function HeroSection() {
 
         {/* Main Headline */}
         <h1 className="mx-auto max-w-4xl text-center" style={{ fontFamily: "var(--font-heading)" }}>
-          Lend. Borrow. Grow.
+          Lend. Borrow. <span className="text-[#FF6B35]">Grow.</span>
         </h1>
 
         {/* Subtitle */}
